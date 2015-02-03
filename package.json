@@ -1,0 +1,9 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "dependencies": {
+    "phantom": "^0.7.2",
+    "require": "^2.4.17",
+    "spooky": "^0.2.5"
+  }
+}
