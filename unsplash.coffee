@@ -1,4 +1,3 @@
-#request = require 'request'
 Spooky = require('spooky')
 
 spooky = new Spooky
@@ -14,7 +13,7 @@ spooky = new Spooky
         this.each imageLinks, (self, link) ->
           name = link.attributes.href
           name = name.split('/')[2]
-          this.download "https://unsplash.com#{link.attributes.href}", "#{name}.jpg"
+          this.download "https://unsplash.com#{link.attributes.href}", "/Users/alexfaber/Pictures/#{name}.jpg"
 
       spooky.run()
 

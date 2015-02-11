@@ -19,7 +19,7 @@
         var name;
         name = link.attributes.href;
         name = name.split('/')[2];
-        return this.download("https://unsplash.com" + link.attributes.href, "" + name + ".jpg");
+        return this.download("https://unsplash.com" + link.attributes.href, "/Users/alexfaber/Pictures/" + name + ".jpg");
       });
     });
     return spooky.run();
