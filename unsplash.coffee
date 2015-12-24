@@ -8,7 +8,7 @@ spooky = new Spooky
   ,
     ->
       spooky.start 'https://unsplash.com/', ->
-        imageLinks = this.getElementsInfo 'div.photo-description h2 a:first-child'
+        imageLinks = this.getElementsInfo 'div.photo-description .photo-description__download a:first-child'
 
         this.each imageLinks, (self, link) ->
           name = link.attributes.href

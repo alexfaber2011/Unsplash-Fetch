@@ -14,7 +14,7 @@
   }, function() {
     spooky.start('https://unsplash.com/', function() {
       var imageLinks;
-      imageLinks = this.getElementsInfo('div.photo-description h2 a:first-child');
+      imageLinks = this.getElementsInfo('div.photo-description .photo-description__download a:first-child');
       return this.each(imageLinks, function(self, link) {
         var name;
         name = link.attributes.href;
